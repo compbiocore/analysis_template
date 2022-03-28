@@ -1,4 +1,4 @@
-db_id: 01 #{required}
+db_id: 01 #{not applicable}
 sample_id: SRS114766 #{not required}
 experiment_id: SRX026690 #{not required}
 library_name: Untreated_1 #{not required}
@@ -22,4 +22,4 @@ study_type: "Transcriptome Analysis" #{not required}
 center_project_name: "GSE23316: ENCODE Caltech RNA-seq" #{not required}
 submission_center: GEO #{not required}
 submission_lab: "Center for Life Sciences" #{not required}
-json: #{required}
+json: #{not applicable}
