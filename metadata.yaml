@@ -1,25 +1,24 @@
-db_id: 01 #{not applicable}
-sample_id: SRS114766 #{not required}
-experiment_id: SRX026690 #{not required}
-library_name: Untreated_1 #{not required}
-library_strategy: RNA-Seq #{required}
-library_source: TRANSCRIPTOMIC #{required}
-library_selection: Oligo-dT #{required}
-library_layout: PAIRED #{required}
-platform: ILLUMINA #{not required}
-instrument_model: "Illumina HiSeq 2500" #{not required}
-sra_ids: SRA889647 #{not required}
-run_ids: SRR9110265 #{not required}
-run_center: #{not required}
-project_id: SRP199238 #{not required}
-taxon_id: 9606 #{not required}
-scientific_name: Homo sapiens #{required}
-published: 5/24/19 20:19 #{not required}
-spots: 33246217 #{not required}
-bases: 2526712492 #{not required}
-experiment_name: "GSM591681: Myers_NHEK_cell_1x75D_ilNA_1" #{not required}
-study_type: "Transcriptome Analysis" #{not required}
-center_project_name: "GSE23316: ENCODE Caltech RNA-seq" #{not required}
-submission_center: GEO #{not required}
-submission_lab: "Center for Life Sciences" #{not required}
-json: #{not applicable}
+db_id: 
+  sample_id: SRS114766 #{not required}
+  experiment_id: SRX026690 #{not required}
+  library_name: Untreated_1 #{not required}
+  library_strategy: RNA-Seq #{required}
+  library_source: TRANSCRIPTOMIC #{required}
+  library_selection: Oligo-dT #{required}
+  library_layout: PAIRED #{required}
+  platform: ILLUMINA #{not required}
+  instrument_model: "Illumina HiSeq 2500" #{not required}
+  sra_ids: SRA889647 #{not required}
+  run_ids: SRR9110265 #{not required}
+  run_center: #{not required}
+  project_id: SRP199238 #{not required}
+  taxon_id: 9606 #{not required}
+  scientific_name: Homo sapiens #{required}
+  published: 5/24/19 20:19 #{not required}
+  spots: 33246217 #{not required}
+  bases: 2526712492 #{not required}
+  experiment_name: "GSM591681: Myers_NHEK_cell_1x75D_ilNA_1" #{not required}
+  study_type: "Transcriptome Analysis" #{not required}
+  center_project_name: "GSE23316: ENCODE Caltech RNA-seq" #{not required}
+  submission_center: GEO #{not required}
+  submission_lab: "Center for Life Sciences" #{not required}
