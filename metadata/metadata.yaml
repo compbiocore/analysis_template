@@ -1,5 +1,4 @@
-db_id: 
-  sample_id: SRS114766 #{not required}
+SRS114766_SRX026690: #{this should be a file prefix and is required}
   experiment_id: SRX026690 #{not required}
   library_name: Untreated_1 #{not required}
   library_strategy: RNA-Seq #{required}
