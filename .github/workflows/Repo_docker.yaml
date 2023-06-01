@@ -30,4 +30,10 @@ jobs:
             docker build . -t $dockername
             docker tag $dockername ghcr.io/compbiocore/$dockername:$new_tag
             docker push ghcr.io/compbiocore/$dockername:$new_tag
+            git config --global user.name "someone"
+            git config --global user.email "someone@someplace.com"
+            echo "FROM ghcr.io/compbiocore/$dockername:$new_tag" > Dockerfile
+            git add -A 
+            git commit -m "pulling from latest image"
+            git push origin main 
           fi
