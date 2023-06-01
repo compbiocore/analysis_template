@@ -14,8 +14,8 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io
-          username: j-stat
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.GH_USERNAME }}
+          password: ${{ secrets.GH_TOKEN }}
       - uses: actions/checkout@v2
       - name: Check Dockerfile and Update Image 
         run: |
