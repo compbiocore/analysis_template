@@ -2,8 +2,10 @@
 
 Template for analyses repositories. For more information see https://compbiocore-brown.slab.com/posts/data-organisation-for-analysis-repos-fdi2cddd. Folders that should be present in all such repositories are:
 
- * **metadata:** files such as sample manifests, YAML control files
+ * **metadata:** files such as sample manifests, YAML control files, and Dockerfiles 
  * **scripts:** additional scripts created for analysis of data
+
+**Note:** Make sure your Dockerfile starts with the FROM statement; do not use any commenting or labeling before that statement. 
 
 Optional directories are:
 
