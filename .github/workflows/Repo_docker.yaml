@@ -21,7 +21,7 @@ jobs:
         run: |
           cd metadata
           if [ $(cat Dockerfile | grep . | wc -l) -gt 1 ]; then
-            dockername=$(cat Dockerfile | grep . | cut -d'/' -f3 | cut -d':' -f1)
+            dockername=$(head -n 1 Dockerfile | grep . | cut -d'/' -f3 | cut -d':' -f1)
             new_tag=$(echo $(TZ=EST5EDT date +%b_%d_%I-%M-%S_%Y) | tr '[:upper:]' '[:lower:]')
             echo $dockername
             echo $new_tag
