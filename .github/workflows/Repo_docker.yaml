@@ -41,6 +41,6 @@ jobs:
             mv Dockerfile docker_builds/$new_tag/Dockerfile
             echo "FROM ghcr.io/compbiocore/$dockername:$new_tag" > Dockerfile
             git add -A 
-            git commit -m "pulling from latest repo image"
+            git commit -m "Dockerfile pulling from latest repo image"
             git push origin main 
           fi
