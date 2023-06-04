@@ -21,7 +21,8 @@ jobs:
         run: |
           cd metadata
           if [ $(cat Dockerfile | grep . | wc -l) -gt 1 ]; then
-            dockername=$(head -n 1 Dockerfile | grep . | cut -d'/' -f3 | cut -d':' -f1)
+            dockername="${{ github.event.repository.name }}"
+            #dockername=$(head -n 1 Dockerfile | grep . | cut -d'/' -f3 | cut -d':' -f1)
             new_tag=$(echo $(TZ=EST5EDT date +%b_%d_%I-%M-%S_%Y) | tr '[:upper:]' '[:lower:]')
             echo $dockername
             echo $new_tag
@@ -36,6 +37,6 @@ jobs:
             git config --global user.email "someone@someplace.com"
             echo "FROM ghcr.io/compbiocore/$dockername:$new_tag" > Dockerfile
             git add -A 
-            git commit -m "pulling from latest image"
+            git commit -m "pulling from latest repo image"
             git push origin main 
           fi
