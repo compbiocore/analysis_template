@@ -18,6 +18,7 @@ jobs:
           password: ${{ secrets.GH_TOKEN }}
       - uses: actions/checkout@v2
       - name: Check Dockerfile and Update Image 
+        id: update_image
         run: |
           cd metadata
           if [ $(cat Dockerfile | grep . | wc -l) -gt 1 ]; then
@@ -35,6 +36,9 @@ jobs:
             docker push ghcr.io/compbiocore/$dockername:latest
             git config --global user.name "someone"
             git config --global user.email "someone@someplace.com"
+            mkdir -p docker_builds
+            mkdir -p docker_builds/$new_tag
+            mv Dockerfile docker_builds/$new_tag/Dockerfile
             echo "FROM ghcr.io/compbiocore/$dockername:$new_tag" > Dockerfile
             git add -A 
             git commit -m "pulling from latest repo image"
