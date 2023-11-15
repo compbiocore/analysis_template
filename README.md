@@ -1,5 +1,8 @@
 # CBC analysis template
 
+## Process
+We have documented our overall process here: https://www.notion.so/brownccv/CBC-Analyses-Setup-457a3791a4fa432788812c96b1e864b1?pvs=4
+
 ## Folder organization 
 Template for analyses repositories. For more information see https://compbiocore-brown.slab.com/posts/data-organisation-for-analysis-repos-fdi2cddd. Folders that should be present in all such repositories are:
 
