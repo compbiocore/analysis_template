@@ -19,6 +19,9 @@ This template also comes with a pre-written github action workflow that will wor
 
 **IMPORTANT:** Before making edits to your repo, please make sure you have visited and read: https://app.gitbook.com/o/-LLCCXzgv2-pRyGi-QB2/s/-LpZv9ZetU-XF7BJyICY/container-automation-pipeline
 
+## 
+Also include in the readme details about inputs such as counts matrices and experimental designs so that otheres and reproduce what you've done.
+
 # CBC Project Information
 
 ```
