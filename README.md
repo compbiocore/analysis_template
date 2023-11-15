@@ -1,5 +1,6 @@
 # CBC analysis template
 
+## Folder organization 
 Template for analyses repositories. For more information see https://compbiocore-brown.slab.com/posts/data-organisation-for-analysis-repos-fdi2cddd. Folders that should be present in all such repositories are:
 
  * **metadata:** files such as sample manifests, YAML control files, and Dockerfiles 
@@ -12,6 +13,7 @@ Optional directories are:
  * **notebooks:** notebooks for processed data
  * **results:** any files that will be provided to the collaborator
 
+## Automated container building
 This template also comes with a pre-written github action workflow that will work out-of-the-box as is and automates the process of updating docker images for your analysis project, publishing these updates, and image versioning. To ensure this workflow works for your new repo, you will need to create **two github secrets** for your repo as follows:
 
 * **GH_USERNAME -** this is your guthub username
@@ -19,7 +21,7 @@ This template also comes with a pre-written github action workflow that will wor
 
 **IMPORTANT:** Before making edits to your repo, please make sure you have visited and read: https://app.gitbook.com/o/-LLCCXzgv2-pRyGi-QB2/s/-LpZv9ZetU-XF7BJyICY/container-automation-pipeline
 
-## 
+## Files
 Also include in the readme details about inputs such as counts matrices and experimental designs so that otheres and reproduce what you've done.
 
 # CBC Project Information
