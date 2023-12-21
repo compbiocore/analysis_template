@@ -2,13 +2,14 @@
 
 This is a template for our CBC analyses along with details on how to organize and structure files and descriptions so that they are easy to follow and consistent across the organization.
 
-## Starting a project
+## Starting and working on a project
 
  * Naming structure of a repo should be: PIfirstinitialPIlastname_projectname
  * After using this template to create the repo, create a Github project and associated issues that correspond to deliverables for the project
  * Create your Github secrets for the repo and build the necessary Singularity image to run the analyses (see below)
  * For each issue, create a branch and work off of the branch. You can reference issues with their number when making commits, as well as close them by typing `close #{issue_num}`. When an issue is resolved, make a pull request to merge the branch in. Reviewers are not necessary to merge, but can be helpful if you are working collaboratively on a project.
  * Describe the experimental design, required inputs and how to reproduce under the appropriate sections
+ * Put any updates for your project into `UPDATES.md`.
 
 ## Experimental Design and Goals
 
