@@ -10,6 +10,7 @@ This is a template for our CBC analyses along with details on how to organize an
  * For each issue, create a branch and work off of the branch. You can reference issues with their number when making commits, as well as close them by typing `close #{issue_num}`. When an issue is resolved, make a pull request to merge the branch in. Reviewers are not necessary to merge, but can be helpful if you are working collaboratively on a project.
  * Describe the experimental design, required inputs and how to reproduce under the appropriate sections
  * Put any updates for your project into `UPDATES.md`.
+ * Add any references to [RefChef](https://github.com/compbiocore/refchef).
 
 ## Experimental Design and Goals
 
