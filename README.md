@@ -74,4 +74,7 @@ git_repo_url:
 resources_used:
 summary:
 project_id:
+year:
+documentation_url:
+website_section:
 ```
